@@ -5,7 +5,7 @@ GRANT ALL ON socksdb.* TO 'catalogue_user';
 CREATE TABLE IF NOT EXISTS sock (
 	sock_id varchar(40) NOT NULL, 
 	name varchar(20), 
-	description varchar(200), 
+	description varchar(500), 
 	price float, 
 	count int, 
 	image_url_1 varchar(40), 
@@ -28,28 +28,28 @@ CREATE TABLE IF NOT EXISTS sock_tag (
 		REFERENCES tag(tag_id)
 );
 
-INSERT INTO sock VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "Weave special", "Limited issue Weave socks.", 17.15, 33, "/catalogue/images/weave1.jpg", "/catalogue/images/weave2.jpg");
-INSERT INTO sock VALUES ("a0a4f044-b040-410d-8ead-4de0446aec7e", "Nerd leg", "For all those leg lovers out there. A perfect example of a swivel chair trained calf. Meticulously trained on a diet of sitting and Pina Coladas. Phwarr...", 7.99, 115, "/catalogue/images/bit_of_leg_1.jpeg", "/catalogue/images/bit_of_leg_2.jpeg");
-INSERT INTO sock VALUES ("808a2de1-1aaa-4c25-a9b9-6612e8f29a38", "Crossed", "A mature sock, crossed, with an air of nonchalance.",  17.32, 738, "/catalogue/images/cross_1.jpeg", "/catalogue/images/cross_2.jpeg");
-INSERT INTO sock VALUES ("510a0d7e-8e83-4193-b483-e27e09ddc34d", "SuperSport XL", "Ready for action. Engineers: be ready to smash that next bug! Be ready, with these super-action-sport-masterpieces. This particular engineer was chased away from the office with a stick.",  15.00, 820, "/catalogue/images/puma_1.jpeg", "/catalogue/images/puma_2.jpeg");
-INSERT INTO sock VALUES ("03fef6ac-1896-4ce8-bd69-b798f85c6e0b", "Holy", "Socks fit for a Messiah. You too can experience walking in water with these special edition beauties. Each hole is lovingly proggled to leave smooth edges. The only sock approved by a higher power.",  99.99, 1, "/catalogue/images/holy_1.jpeg", "/catalogue/images/holy_2.jpeg");
-INSERT INTO sock VALUES ("d3588630-ad8e-49df-bbd7-3167f7efb246", "YouTube.sock", "We were not paid to sell this sock. It's just a bit geeky.",  10.99, 801, "/catalogue/images/youtube_1.jpeg", "/catalogue/images/youtube_2.jpeg");
-INSERT INTO sock VALUES ("819e1fbf-8b7e-4f6d-811f-693534916a8b", "Figueroa", "enim officia aliqua excepteur esse deserunt quis aliquip nostrud anim",  14, 808, "/catalogue/images/WAT.jpg", "/catalogue/images/WAT2.jpg");
-INSERT INTO sock VALUES ("zzz4f044-b040-410d-8ead-4de0446aec7e", "Classic", "Keep it simple.",  12, 127, "/catalogue/images/classic.jpg", "/catalogue/images/classic2.jpg");
-INSERT INTO sock VALUES ("3395a43e-2d88-40de-b95f-e00e1502085b", "Colourful", "proident occaecat irure et excepteur labore minim nisi amet irure",  18, 438, "/catalogue/images/colourful_socks.jpg", "/catalogue/images/colourful_socks.jpg");
-INSERT INTO sock VALUES ("837ab141-399e-4c1f-9abc-bace40296bac", "Cat socks", "consequat amet cupidatat minim laborum tempor elit ex consequat in",  15, 175, "/catalogue/images/catsocks.jpg", "/catalogue/images/catsocks2.jpg");
+INSERT INTO sock VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "Boots Shoe", "Elevate your style with our collection of boots - crafted with premium materials and designed for both fashion and function. Step confidently into any season with our versatile range, blending timeless appeal with modern comfort.", 200, 33, "/catalogue/images/boots.jpg", "/catalogue/images/boots.jpg");
+INSERT INTO sock VALUES ("a0a4f044-b040-410d-8ead-4de0446aec7e", "Brogues", "Step into sophistication with our exquisite range of brogues. Meticulously crafted with precision and style, each pair embodies timeless elegance and modern flair. Elevate your wardrobe with the classic charm and unmatched comfort of our brogues, perfect for every occasion.", 150, 30, "/catalogue/images/brogues.jpg", "/catalogue/images/brogues.jpg");
+INSERT INTO sock VALUES ("808a2de1-1aaa-4c25-a9b9-6612e8f29a38", "Casuals", " Effortlessly stylish and endlessly versatile, our collection of casual shoes is designed to complement your everyday look with comfort and flair. From laid-back sneakers to relaxed loafers, each pair embodies the perfect blend of fashion-forward design and all-day comfort, ensuring you step out in style wherever you go.",  80, 50, "/catalogue/images/casuals.jpg", "/catalogue/images/casuals.jpg");
+INSERT INTO sock VALUES ("510a0d7e-8e83-4193-b483-e27e09ddc34d", "Chukka Boots", "Timeless yet contemporary, our Chukka Boots offer a perfect balance of rugged sophistication and everyday comfort. Crafted with premium materials and meticulous attention to detail, these versatile boots effortlessly elevate any outfit, from casual to semi-formal occasions.",  120, 30, "/catalogue/images/chukkaboots.jpg", "/catalogue/images/chukkaboots.jpg");
+INSERT INTO sock VALUES ("03fef6ac-1896-4ce8-bd69-b798f85c6e0b", "Casuals Special", "Shoe fit for a Messiah. You too can experience walking in water with these special edition beauties.",  99.99, 1, "/catalogue/images/shoe2.png", "/catalogue/images/shoe2.png");
+INSERT INTO sock VALUES ("d3588630-ad8e-49df-bbd7-3167f7efb246", "Espandrilles", "Embrace laid-back elegance with our collection of espadrilles. Featuring classic woven jute soles and lightweight canvas uppers, these shoes exude casual charm with a touch of Mediterranean flair. Perfect for leisurely strolls or beachside getaways, our espadrilles blend comfort and style effortlessly.",  50, 60, "/catalogue/images/espandrilles.jpg", "/catalogue/images/espandrilles.jpg");
+INSERT INTO sock VALUES ("819e1fbf-8b7e-4f6d-811f-693534916a8b", "Loafers", "Effortlessly chic and endlessly versatile, our loafers are the epitome of sophisticated comfort. Crafted from premium leather and designed with timeless elegance, these slip-on shoes seamlessly transition from work to weekend, offering unparalleled style and ease.",  100, 100, "/catalogue/images/loafers.jpg", "/catalogue/images/loafers.jpg");
+INSERT INTO sock VALUES ("zzz4f044-b040-410d-8ead-4de0446aec7e", "Monk", "Make a statement with our elegant monk shoes, a fusion of classic charm and contemporary flair. Featuring distinctive buckle closures and expert craftsmanship, these shoes add a touch of sophistication to any ensemble, whether it's a formal affair or a casual outing.",  150, 120, "/catalogue/images/monk.jpg", "/catalogue/images/monk.jpg");
+INSERT INTO sock VALUES ("3395a43e-2d88-40de-b95f-e00e1502085b", "Oxfoards", "Elevate your formal attire with our timeless Oxford shoes. Meticulously crafted from premium leather and featuring exquisite detailing, these classic lace-up shoes exude sophistication and refinement. Whether you're attending a boardroom meeting or a special event, our Oxfords ensure you step out in style",  120, 100, "/catalogue/images/oxfoards.jpg", "/catalogue/images/oxfoards.jpg");
+INSERT INTO sock VALUES ("837ab141-399e-4c1f-9abc-bace40296bac", "Sneakers", "Experience the perfect blend of style and comfort with our versatile collection of sneakers. Crafted with innovative materials and ergonomic design, these shoes offer unbeatable support for all-day wear. From classic canvas to modern knit styles, our sneakers are your go-to choice for effortless street style.",  80, 175, "/catalogue/images/sneakers.jpg", "/catalogue/images/sneakers.jpg");
 
-INSERT INTO tag (name) VALUES ("brown");
-INSERT INTO tag (name) VALUES ("geek");
-INSERT INTO tag (name) VALUES ("formal");
-INSERT INTO tag (name) VALUES ("blue");
-INSERT INTO tag (name) VALUES ("skin");
-INSERT INTO tag (name) VALUES ("red");
-INSERT INTO tag (name) VALUES ("action");
-INSERT INTO tag (name) VALUES ("sport");
-INSERT INTO tag (name) VALUES ("black");
-INSERT INTO tag (name) VALUES ("magic");
-INSERT INTO tag (name) VALUES ("green");
+INSERT INTO tag (name) VALUES ("Neutral");
+INSERT INTO tag (name) VALUES ("Colorful");
+INSERT INTO tag (name) VALUES ("Strandard");
+INSERT INTO tag (name) VALUES ("Widefit");
+INSERT INTO tag (name) VALUES ("Narrowfit");
+INSERT INTO tag (name) VALUES ("Athletic");
+INSERT INTO tag (name) VALUES ("Formal");
+INSERT INTO tag (name) VALUES ("Waterproof");
+INSERT INTO tag (name) VALUES ("Breathable");
+INSERT INTO tag (name) VALUES ("Lightweight");
+INSERT INTO tag (name) VALUES ("Work");
 
 INSERT INTO sock_tag VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "2");
 INSERT INTO sock_tag VALUES ("6d62d909-f957-430e-8689-b5129c0bb75e", "9");
